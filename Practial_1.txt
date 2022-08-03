@@ -1,0 +1,59 @@
+Java is one of the most popular and widely used programming language and
+platform. A platform is an environment that helps to develop and run programs
+written in any programming language.
+Java is fast, reliable and secure. From desktop to web applications, scientific
+supercomputers to gaming consoles, cell phones to the Internet, Java is used in
+every nook and corner.
+JDK: The JDK is a development environment for building applications, applets,
+and components using the Java programming language. The JDK includes tools
+useful for developing and testing programs written in the Java programming
+language and running on the Java platform
+JRE: The Java Runtime Environment, or JRE, is a software layer that runs on top
+of a computer’s operating system software and provides the class libraries and
+other resources that a specific Java program needs to run.
+JVM: The Java Virtual Machine (JVM) is the runtime engine of the Java
+Platform, which allows any program written in Java or other language compiled
+into Java bytecode to run on any computer that has a native JVM.
+Javadoc: Javadoc (originally cased Javadoc) is a documentation generator
+created by Sun Microsystems for the Java language (now owned by Oracle
+Corporation) for generating API documentation in HTML format from Java
+source code
+Command Line Argument: Command Line Argument in Java is the
+information that is passed to the program when it is executed. The information
+passed is stored in the string array passed to the main() method and it is stored as
+a string. It is the information that directly follows the program's name on the
+command line when it is running.
+Introduction to Object oriented Concepts:
+• Object:
+Objects are always called as instances of a class. Objects are created from
+class in java or any other languages. Objects are those that have state and
+behaviour. Objects are abstract data types (i.e., objects behaviour is
+defined by a set of values and operations)
+Class:
+Classes are like object constructors for creating objects. The collection of
+objects is said to be a class. Classes are said to be logical quantities.
+Classes don’t consume any space in the memory. Class is also called a
+template of an object. Classes have members which can be fields,
+methods and constructors. A class has both static and instance initializers.
+• Inheritance:
+Inheritance in Java is a mechanism in which one object acquires all the
+properties and behaviours of a parent object. It is an important part
+of OOPs (Object Oriented programming system).
+The idea behind inheritance in Java is that you can create new classes that
+are built upon existing classes. When you inherit from an existing class,
+you can reuse methods and fields of the parent class. Moreover, you can
+add new methods and fields in your current class also.
+• Polymorphism:
+It is a concept by which we can perform a single action in different ways.
+Polymorphism is derived from 2 Greek words: poly and morphs. The word
+"poly" means many and "morphs" means forms. So, polymorphism means
+many forms.
+There are two types of polymorphism in Java: compile-time polymorphism
+and runtime polymorphism. We can perform polymorphism in java by
+method overloading and method overriding.
+If you overload a static method in Java, it is the example of compile time
+polymorphism. Here, we will focus on runtime polymorphism in java.
+• Abstraction:
+It is a process of hiding the implementation details and showing only
+functionality to the user.
+Another way, it shows only essential things to the user and hides the
