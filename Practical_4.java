@@ -1,56 +1,32 @@
-/*
-The problem is to write a program that will grade multiple-choice tests. Assume there are eight students and ten questions, and the answers are stored in a two-dimensional array. Each row records a student’s answers to the questions, as shown in the following array.
-Students’ Answers to the Questions:
-0 1 2 3 4 5 6 7 8 9
-Student 0 A B A C C D E E A D
-Student 1 D B A B C A E E A D
-Student 2 E D D A C B E E A D
-Student 3 C B A E D C E E A D
-Student 4 A B D C C D E E A D
-Student 5 B B E C C D E E A D
-Student 6 B B A C C D E E A D
-Student 7 E B E C C D E E A D
-The key is stored in a one-dimensional array:
-Key to the Questions:
-0 1 2 3 4 5 6 7 8 9
-Key D B D C C D A E A D
-Your program grades the test and displays the result. It compares each student’s answers with the key, counts the number of correct answers, and displays it.
- */
-/*
-  Preated By:- Shreyans Pranam
-  ID:- 21CE110
-*/
+/* shreyans pranami 21CE110*/
 import java.util.Scanner;
-public class StudentAns {
+public class Practical_4 {
     public static void main(String[] args) {
+        int flag = 0;
         Scanner sc = new Scanner(System.in);
-        char[][] stu = new char[8][11];
-        for (int i = 0; i < 8; i++) {
-            System.out.print("Enter the answers of Student " + i + ": ");
-            stu[i][0] = (char) i;
-            for (int j = 1; j < 11; j++) {
-                char a = sc.next().charAt(0);
-                stu[i][j] = a;
-            }
+        System.out.println("Enter the number of elements: ");
+        int n = sc.nextInt();
+        int a[] = new int[10];
+        System.out.println("Enter the elements of array: ");
+        for(int j=0;j<n;j++)
+        {
+            a[j] = sc.nextInt();
         }
-        char key[] = {'D', 'B', 'D', 'C', 'C', 'D', 'A', 'E', 'A', 'D'};
-        int ans[][] = new int[8][2];
-        int c = 0;
-        for (int i = 0; i < 8; i++) {
-            ans[i][0] = stu[i][0];
-            for (int j = 1; j < 11; j++) {
-                if (stu[i][j] == key[j - 1]) {
-                    c++;
-                }
+        for(int i=0;i<(a.length-2);i++)
+        {
+            if(a[i]==1 && a[i+1]==2 && a[i+2]==3)
+            {
+                flag = 1;
+            }
 
-            }
-            ans[i][1] = c;
-            c = 0;
         }
-        System.out.println();
-        for (int i = 0; i < 8; i++) {
-            System.out.println("Number of correct answers by Student " + ans[i][0] + " is " + ans[i][1]);
+        if(flag==1)
+        {
+            System.out.println("true");
         }
-        System.out.println("Prepared by Shreyans j.  pranami ID:-21CE110");
+        else if(flag==0) {
+            System.out.println("false");
+        }
+        System.out.println("21CE110 shreyans");
     }
 }
